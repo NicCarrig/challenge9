@@ -12,7 +12,7 @@ const questions = [
     {
         type: 'input',
         name: 'description',
-        message: 'Please enter a description of your problem'
+        message: 'Please enter a description of your project'
     },
     {
         type: 'input',
@@ -23,6 +23,32 @@ const questions = [
         type: 'input',
         name: 'usage',
         message: 'Please list the steps to use this'
+    },
+    {
+        type: 'list',
+        name: 'license',
+        message: 'What license does this project use? (choose one)',
+        choices: ['BSD', 'MIT', 'GNU GPL', 'none']
+    },
+    {
+        type: 'input',
+        name: 'contributions',
+        message: 'Who contributed to this project?'
+    },
+    {
+        type: 'input',
+        name: 'tests',
+        message: 'How do you test this project?'
+    },
+    {
+        type: 'input',
+        name: 'github',
+        message: 'What is the GitHib username associated with this project?'
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What email should people send questions about the project to?'
     }
 ];
 
